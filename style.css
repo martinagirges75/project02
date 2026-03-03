@@ -470,7 +470,35 @@ body {
     color: #c49b63;
     border-bottom: 4px solid #c49b63;
 }
+.trending-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
 
+.trending-header h2 {
+    font-size: 32px;
+    font-weight: 500;
+    color: #292621;
+    margin: 0;
+}
+
+.filter-nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #292621;
+    padding-bottom: 5px;
+    transition: 0.3s;
+}
+
+.filter-nav a.active {
+    color: #f00;
+    border-bottom: 3px solid #f00;
+}
 .product-slider {
     position: relative;
     margin-top: 50px;
@@ -991,3 +1019,4 @@ body {
 .heart {
     color: red;
 }
+
