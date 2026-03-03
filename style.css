@@ -70,6 +70,7 @@ body {
     transform: rotateY(180deg);
 }
 
+
 .navbar {
     height: 80px;
     display: flex;
@@ -247,7 +248,6 @@ body {
     font-weight: 600;
 }
 
-
 .hero {
     display: flex;
     align-items: center;
@@ -399,7 +399,6 @@ body {
     color: #c49b63;
 }
 
-
 .product-card {
     text-align: center;
     position: relative;
@@ -470,6 +469,7 @@ body {
     color: #c49b63;
     border-bottom: 4px solid #c49b63;
 }
+
 .trending-header {
     display: flex;
     justify-content: space-between;
@@ -499,6 +499,7 @@ body {
     color: #f00;
     border-bottom: 3px solid #f00;
 }
+
 .product-slider {
     position: relative;
     margin-top: 50px;
@@ -787,9 +788,6 @@ body {
     font-weight: normal;
 }
 
-
-/* News */
-
 .latest-news-section {
     width: 100%;
     min-height: 600px;
@@ -908,9 +906,6 @@ body {
     color: #1d2547;
 }
 
-
-/* Footer */
-
 .main-footer {
     background: #111;
     color: white;
@@ -981,9 +976,6 @@ body {
     color: #777;
 }
 
-
-/* Responsive */
-
 @media (max-width: 992px) {
     .hero {
         flex-direction: column;
@@ -1019,4 +1011,3 @@ body {
 .heart {
     color: red;
 }
-
