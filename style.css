@@ -70,6 +70,209 @@ body {
     transform: rotateY(180deg);
 }
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #fff;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 500;
+    color: #16161a;
+}
+
+.navbar .logo i {
+    margin-right: 10px;
+    color: #f00;
+}
+
+.navbar .nav-links {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar .nav-links li {
+    position: relative;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: #16161a;
+    font-size: 18px;
+    padding: 5px 10px;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+    color: #f00;
+}
+
+.navbar .nav-links a.link-center {
+    display: inline-block;
+}
+
+.navbar .nav-links a.link-center::after,
+.navbar .nav-links a.link-center::before {
+    content: "";
+    position: absolute;
+    border-color: #f00;
+    border-style: solid;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.navbar .nav-links a.link-center::after {
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-width: 2px 0;
+    transform-origin: left;
+}
+
+.navbar .nav-links a.link-center::before {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    border-width: 0 2px;
+    transform-origin: top;
+}
+
+.navbar .nav-links a.link-center:hover::after {
+    width: 100%;
+    opacity: 1;
+}
+
+.navbar .nav-links a.link-center:hover::before {
+    height: 100%;
+    opacity: 1;
+}
+
+.navbar .nav-links a {
+    position: relative;
+    text-decoration: none;
+    color: #16161a;
+    padding: 8px 12px;
+    transition: color 0.3s;
+}
+
+.navbar .nav-links a::after,
+.navbar .nav-links a::before {
+    content: "";
+    position: absolute;
+    opacity: 0;
+    border-color: #f00;
+    border-style: solid;
+    transition: all 0.4s ease;
+}
+
+.navbar .nav-links a::after {
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-width: 2px 0;
+    transform-origin: left;
+}
+
+.navbar .nav-links a::before {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    border-width: 0 2px;
+    transform-origin: top;
+}
+
+.navbar .nav-links a:hover::after {
+    width: 100%;
+    opacity: 1;
+}
+
+.navbar .nav-links a:hover::before {
+    height: 100%;
+    opacity: 1;
+}
+
+.navbar .nav-links a:hover {
+    color: #f00;
+}
+
+.navbar .main-menu:hover .drop-menu {
+    display: flex;
+}
+
+.navbar .drop-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    gap: 20px;
+    z-index: 100;
+}
+
+.navbar .drop-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .drop-menu ul li {
+    margin-bottom: 10px;
+}
+
+.navbar .drop-menu ul li a.link-drop {
+    color: #16161a;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar .drop-menu ul li a.link-drop:hover,
+.nav-links {
+    color: #f00;
+}
+
+.navbar .nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+    color: #16161a;
+    position: relative;
+}
+
+.navbar .cart {
+    position: relative;
+}
+
+.navbar .cart span {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: #f00;
+    color: #fff;
+    font-size: 12px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .navbar {
     height: 80px;
@@ -206,7 +409,7 @@ body {
 .nav-links .drop-menue li a:hover,
 .nav-links .drop-menue li .link-drop:hover {
     transform: scale(1.1);
-    color: #f00;
+    color: rgb(124, 139, 25);
 }
 
 .cart {
@@ -218,7 +421,7 @@ body {
     position: absolute;
     width: 20px;
     height: 20px;
-    background: #c49b63;
+    background: #271803;
     color: #fff;
     font-size: 12px;
     line-height: 20px;
